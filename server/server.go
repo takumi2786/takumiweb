@@ -10,6 +10,7 @@ func Init() {
 	r := router()
 	r.Run()
 }
+
 func router() *gin.Engine {
 	r := gin.Default()
 	ctrl := controllers.HealthzController{}
