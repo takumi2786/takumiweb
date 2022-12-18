@@ -45,6 +45,7 @@ func Init() {
 
 func autoMigration() {
 	db.AutoMigrate(&models.User{})
+	db.AutoMigrate(&models.Post{})
 }
 
 // GetDB is called in models
