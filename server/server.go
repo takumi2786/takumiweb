@@ -16,6 +16,5 @@ func router() *gin.Engine {
 	ctrl := controllers.HealthzController{}
 
 	r.GET("/healthz", ctrl.Healthz)
-
 	return r
 }

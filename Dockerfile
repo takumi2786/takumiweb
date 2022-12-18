@@ -8,7 +8,8 @@ WORKDIR /app
 RUN go mod tidy
 
 EXPOSE 8080
-ENTRYPOINT go run main.go
+# ENTRYPOINT go run main.go
+ENTRYPOINT sleep 99999
 
 # # コンテナ内に作業ディレクトリを作成
 # RUN mkdir -p $GOPATH/src/github.com/katsuomi/LikeTwitterApp-backend
